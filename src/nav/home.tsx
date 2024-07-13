@@ -1,4 +1,4 @@
-import HomeScreen from '@/screens/HomeScreen';
+import HomeScreen from '@/screens/home';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 const HomeDrawerScreens = {

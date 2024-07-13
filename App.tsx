@@ -4,7 +4,7 @@
  */
 import 'react-native-gesture-handler';
 
-import AppNavigator from '@/nav/AppNavigator';
+import RootNavigator from '@/nav/root';
 import { Providers } from '@/Providers';
 import { StatusBar } from 'expo-status-bar';
 
@@ -12,7 +12,7 @@ export default function App() {
   return (
     <Providers>
       <StatusBar style="auto" />
-      <AppNavigator />
+      <RootNavigator />
     </Providers>
   );
 }
