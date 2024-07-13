@@ -1,12 +1,8 @@
 import HomeScreen from '@/screens/home';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
-const HomeDrawerScreens = {
-  HomeScreen: 'Home.screen'
-} as const;
-
-type HomeDrawerParamList = {
-  [HomeDrawerScreens.HomeScreen]: undefined;
+export type HomeDrawerParamList = {
+  HomeScreen: undefined;
 };
 
 const Drawer = createDrawerNavigator<HomeDrawerParamList>();
@@ -14,14 +10,10 @@ const Drawer = createDrawerNavigator<HomeDrawerParamList>();
 function HomeDrawer() {
   return (
     <Drawer.Navigator
-      initialRouteName={HomeDrawerScreens.HomeScreen}
+      initialRouteName="HomeScreen"
       screenOptions={{ drawerType: 'front', swipeEdgeWidth: 200 }}
     >
-      <Drawer.Screen
-        name={HomeDrawerScreens.HomeScreen}
-        component={HomeScreen}
-        options={{ headerShown: false }}
-      />
+      <Drawer.Screen name="HomeScreen" component={HomeScreen} options={{ headerShown: false }} />
     </Drawer.Navigator>
   );
 }
