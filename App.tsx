@@ -6,7 +6,7 @@ import 'react-native-gesture-handler';
 
 import RootNavigator from '@/nav/root';
 import { StatusBar } from 'expo-status-bar';
-import Providers from '@/Providers';
+import Providers from '@/providers';
 
 export default function App() {
   return (
