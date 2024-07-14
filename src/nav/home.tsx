@@ -1,3 +1,4 @@
+import Sidebar from '@/components/sidebar';
 import HomeScreen from '@/screens/home';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
@@ -12,6 +13,7 @@ function HomeDrawer() {
     <Drawer.Navigator
       initialRouteName="HomeScreen"
       screenOptions={{ drawerType: 'front', swipeEdgeWidth: 200 }}
+      drawerContent={props => <Sidebar {...props} />}
     >
       <Drawer.Screen name="HomeScreen" component={HomeScreen} options={{ headerShown: false }} />
     </Drawer.Navigator>
