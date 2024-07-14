@@ -4,6 +4,9 @@
  */
 import 'react-native-gesture-handler';
 
+// Register themes
+import '@/themes/setup';
+
 import RootNavigator from '@/nav/root';
 import { StatusBar } from 'expo-status-bar';
 import Providers from '@/providers';
