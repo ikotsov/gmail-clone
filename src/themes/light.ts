@@ -19,8 +19,8 @@ const palette = {
 };
 
 const lightTheme = {
-  ...spacing,
-  ...borderRadius,
+  spacing,
+  borderRadius,
   colors: {
     white: palette.white,
     black: palette.black,
