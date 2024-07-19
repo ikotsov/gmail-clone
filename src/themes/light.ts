@@ -40,6 +40,12 @@ const lightTheme = {
     headerBarBackground: palette.paper20,
     fieldInputBackground: palette.paper00,
     fieldInputPlaceholderTextColor: palette.paper300
+  },
+  text: {
+    sidebar: palette.navy900
+  },
+  bg: {
+    sidebarBackground: palette.navy20
   }
 };
 
