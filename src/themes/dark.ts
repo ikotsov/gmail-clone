@@ -1,5 +1,7 @@
+import lightTheme from './light';
+
 const darkTheme = {
-  colors: {}
+  ...lightTheme
 };
 
 export default darkTheme;
