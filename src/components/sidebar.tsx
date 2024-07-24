@@ -1,7 +1,7 @@
 import { DrawerContentComponentProps } from '@react-navigation/drawer';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import Box from './box';
 import Text from './text';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 type Props = DrawerContentComponentProps;
 
